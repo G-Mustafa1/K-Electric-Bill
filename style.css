@@ -1,0 +1,132 @@
+.contanir{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.bill-contanir{
+   background-color: #fff;
+   padding: 20px 30px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.img-contanir{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.img-contanir img{
+   width: 360px;
+   height: 155px;
+   object-fit: cover;
+   mix-blend-mode: multiply;
+}
+.bill-item{
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.bill-item input:hover{
+   background-color: lightgray;
+}
+.bill-item input{
+   border-radius: 5px;
+   width: 400px;
+   height: 5vh;
+   padding: 5px 15px;
+   font-size: 16px;
+   outline: none;
+   border: none;
+   background-color: rgb(235, 235, 235);
+   border-bottom: 1px solid #000;
+}
+.bill-item input::placeholder{
+   color: #000;
+}
+.bill-contanir h1{
+   color: orangered;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bill-item label{
+   font-weight: bold;
+   font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-bottom: 5px;
+}
+.btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 10px;
+}
+.btn button{
+   width: 420px;
+   padding: 10px 25px;
+   font-size: 25px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   margin-bottom: 10px;
+   background-color: rgb(244, 145, 25);
+   color: #fff;
+   margin-bottom: 10px;
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+.btn button:hover{
+   background-color: rgb(250, 123, 28);
+}
+@media(max-width: 500px){
+   .bill-contanir{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .bill-item input{
+      width: 350px;
+   }
+   .btn button{
+      width: 350px;
+      font-size: 20px;
+   }
+}
+@media(max-width: 400px){
+   .bill-contanir{
+      padding: 10px 20px;
+   }
+   .bill-item input{
+      width: 300px;
+      font-size: 12px;
+      height: 4vh;
+   }
+   .bill-item label{
+      font-size: 17px;
+   }
+   .btn button{
+      width: 300px;
+   }
+}
+
+#result-bill{
+   font-size: 20px;
+   margin-top: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   gap: 10px;
+}
+.new-contanir{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.ke-contanir{
+   background-color: #fff;
+   padding: 20px 30px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   width: 450px;
+}

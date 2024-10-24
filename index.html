@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>K-Electric</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="img/ke.jpg" type="image/x-icon">
+</head>
+<body>
+   <div id="block" class="contanir">
+      <div class="bill-contanir">
+      <div class="img-contanir">
+         <img src="img/ke.jpg" alt="">
+      </div>
+      <div class="bill-item">
+         <label for="">Customer Name:</label>
+         <input type="text" name="" id="customer">
+      </div>
+      <div class="bill-item">
+         <label for="">Number of units:</label>
+         <input type="number" name="" id="unit" step="1">
+      </div>
+      <div class="bill-item">
+         <label for="">Changes per unit:</label>
+         <input type="text" placeholder="16" name="" id="" readonly>
+      </div>
+      <div class="bill-item">
+         <label for="">Late Payment Surcharge:</label>
+         <input type="number" placeholder="350" name="" id="" readonly>
+      </div>
+      <div class="btn">
+         <button onclick="bill()">Generate Bill</button>
+      </div>
+      </div>
+   </div>
+   <div style="display: none;" id="none">
+   <div class="new-contanir">
+      <div class="ke-contanir">
+         <div class="img-contanir">
+            <img src="img/ke.jpg" alt="">
+         </div> 
+         <div id="result-bill"></div> 
+         <div class="btn"><button id="btnR">Re Generate Bill</button></div> 
+      </div>
+   </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
